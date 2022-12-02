@@ -1,1 +1,1 @@
-KrzysztofRozbicki.github.io/coffee-test
+https://KrzysztofRozbicki.github.io/coffee-test
