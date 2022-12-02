@@ -71,25 +71,25 @@ li {
 .logo-top {
   height: 65px;
   width: 65px;
-  background-image: url('/images/logo-black.png');
+  background-image: url('/images/logo-black.webp');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .logo-top:hover {
-  background-image: url('/images/logo-white.png');
+  background-image: url('/images/logo-white.webp');
 }
 
 .logo-bottom {
   height: 85px;
   width: 85px;
-  background-image: url('/images/logo-white.png');
+  background-image: url('/images/logo-white.webp');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .logo-bottom:hover {
-  background-image: url('/images/logo-black.png');
+  background-image: url('/images/logo-black.webp');
 }
 
 .right {
@@ -127,7 +127,7 @@ li {
 
 .coffee-image {
   height: 500px;
-  background-image: url('/images/coffee-seeds.jpeg');
+  background-image: url('/images/coffee-seeds.webp');
   background-size: cover;
   background-position: 50% 50%;
   text-align: center;
@@ -191,7 +191,7 @@ li {
 }
 
 .p-2 {
-  background-image: url('/images/coffee-2.jpeg');
+  background-image: url('/images/coffee-2.webp');
   background-position: 50% 100%;
 }
 
