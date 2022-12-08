@@ -62,6 +62,7 @@ address {
 
 .top-bar {
   position: fixed;
+  z-index: 3;
   width: 100%;
   background-color: var(--coffee-light);
   border-bottom: 4px solid var(--coffee-black);
@@ -193,6 +194,7 @@ address {
 }
 
 .article-photo {
+  position: relative;
   height: 400px;
   width: 400px;
   align-items: center;
