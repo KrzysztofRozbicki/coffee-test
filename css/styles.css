@@ -11,6 +11,7 @@
   --coffee-light: #988686;
   --coffee-gray: #d1d0d0;
   --coffee-black: #000;
+  --width: 200px;
 }
 
 @font-face {
@@ -55,6 +56,10 @@ li {
   display: inline-block;
 }
 
+address {
+  font-style: normal;
+}
+
 .top-bar {
   position: fixed;
   width: 100%;
@@ -71,25 +76,25 @@ li {
 .logo-top {
   height: 65px;
   width: 65px;
-  background-image: url('/images/logo-black.webp');
+  background-image: url('../images/logo-black.webp');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .logo-top:hover {
-  background-image: url('/images/logo-white.webp');
+  background-image: url('../images/logo-white.webp');
 }
 
 .logo-bottom {
   height: 85px;
   width: 85px;
-  background-image: url('/images/logo-white.webp');
+  background-image: url('../images/logo-white.webp');
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .logo-bottom:hover {
-  background-image: url('/images/logo-black.webp');
+  background-image: url('../images/logo-black.webp');
 }
 
 .right {
@@ -125,9 +130,32 @@ li {
   margin: 0 auto;
 }
 
+.svg-section svg {
+  width: 300px;
+  height: 300px;
+  outline: 2px dashed #000;
+}
+
+.test-width {
+  margin: 0 auto;
+  width: 100px;
+}
+.svg-section {
+  padding: 250px 0px;
+}
+.svg-background {
+  background-image: url('/svg/cat_segyum.svg');
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  text-align: center;
+  color: var(--purple);
+  padding: 75px 0px;
+}
 .coffee-image {
   height: 500px;
-  background-image: url('/images/coffee-seeds.webp');
+  background-image: url('../images/coffee-seeds.webp');
   background-size: cover;
   background-position: 50% 50%;
   text-align: center;
@@ -186,17 +214,17 @@ li {
   display: block;
 }
 .p-1 {
-  background-image: url('/images/coffee-1.webp');
+  background-image: url('../images/coffee-1.webp');
   background-position: 50% 20%;
 }
 
 .p-2 {
-  background-image: url('/images/coffee-2.webp');
+  background-image: url('../images/coffee-2.webp');
   background-position: 50% 100%;
 }
 
 .p-3 {
-  background-image: url('/images/coffee-3.webp');
+  background-image: url('../images/coffee-3.webp');
   background-position: 50% 80%;
 }
 
@@ -235,14 +263,24 @@ li {
   text-align: center;
 }
 
-.best-coffee {
+.call-to-action h1 {
+  background: repeating-conic-gradient(var(--coffee-black) 0 15deg, var(--coffee-light) 0 30deg);
+  background-position: 0px 0px;
+  background-size: 100% 640px;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   padding: 50px 200px;
   text-align: center;
-  color: var(--coffee-gray);
   font-size: 80px;
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+}
+
+.call-to-action h1:hover {
+  color: var(--coffee-gray);
 }
 
 .buy-coffee {
@@ -255,14 +293,15 @@ li {
   border-radius: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
+  transition: all 0.5s;
 }
 
 .buy-coffee:hover,
 .buy-coffee:focus {
+  transition: all 0.5s;
   cursor: pointer;
   position: relative;
   color: var(--coffee-dark);
-  top: -10px;
   box-shadow: 0px 4px 5px var(--light-black), 0px 8px 10px var(--coffee-dark),
     0px 12px 15px var(--coffee-light);
 }
@@ -293,4 +332,15 @@ li {
 .bottom-menu a {
   color: var(--coffee-gray);
   line-height: 1.5;
+}
+
+.flex-test {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+.flex-box {
+  padding-bottom: 150px;
 }
